@@ -22,7 +22,6 @@ function [lik, all_s_up, Neff] = PF_lik(A, B, H, Phi, R, S2, N, yt, x0, P0, naiv
 %   all_s_up  : particles resampled (updated) (T by N)
 %   Neff      : Effective sample size
 % -----------------------------------------------------------------------
- rng(111122) % For replicability of results
     
 % housekeeping
 ne        = size(S2,1);
